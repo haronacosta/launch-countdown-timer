@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Launch Countdown Timer</title>
+
+    <script
+      src="https://kit.fontawesome.com/0453fbc82a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="libs/normalize.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="wrapper">
+    <header class="header">
+      <div class="header__title">WE'RE LAUNCHING SOON</div>
+    </header>
+
+    <main class="main">
+      <div class="main__wrapper">
+        <div class="form__container d-none">
+          <div class="main__text--small">Please select the launch date.</div>
+          <form class="form" id="launch-form">
+            <input class="form__input" type="date" name="Date" id="date" />
+            <input class="form__input" type="time" name="time" id="time" />
+            <button type="submit" class="btn-submit">Launch</button>
+          </form>
+        </div>
+
+        <section class="countdown"></section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer_wrapper">
+        <div class="footer__icons">
+          <div class="icons__wrapper">
+            <a
+              class="icon__url"
+              href="https://github.com/haronacosta/"
+              target="_blank"
+            >
+              <i class="icon__ico fab fa-github"></i>
+            </a>
+
+            <a
+              class="icon__url"
+              href="https://twitter.com/haronacostav"
+              target="_blank"
+            >
+              <i class="icon__ico fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,154 @@
+:root {
+  --dark-desaturated-blue: hsl(236, 21%, 26%);
+  --dark-desaturated-blue-low: hsla(236, 21%, 26%, 0.8);
+  --grayish-blue: hsl(237, 18%, 59%);
+  --soft-red: hsl(345, 95%, 68%);
+  --very-dark-blue: hsl(235, 16%, 14%);
+  --very-dark-mostly-dark-blue: hsl(234, 17%, 12%);
+  --white: hsl(0, 0%, 100%);
+}
+
+/* GENERAL */
+.wrapper {
+  background-color: var(--very-dark-blue);
+  color: var(--white);
+  background-image: url('../images/bg-stars.svg');
+  font-family: 'Red Hat Text', sans-serif;
+  font: size 12px;
+  font-weight: 700;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+/* HEADER */
+.header {
+  padding-top: 8rem;
+  text-align: center;
+}
+
+.header__title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+  line-height: 1.8rem;
+}
+
+/* MAIN */
+.main {
+  position: relative;
+  height: 50%;
+}
+
+.main__wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.main__text--small {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--white);
+  margin-bottom: 1.5rem;
+}
+
+/* FORM */
+
+.form__input {
+  background-color: var(--dark-desaturated-blue);
+  border: none;
+  color: var(--soft-red);
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1rem;
+}
+
+/* FOOTER */
+.footer {
+  background-image: url('../images/pattern-hills.svg');
+  background-size: cover;
+  bottom: 0;
+  height: 10rem;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.footer__wrapper {
+  position: relative;
+}
+
+.icons__wrapper {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.icons__wrapper a {
+  text-decoration: none;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.icon__ico {
+  color: var(--grayish-blue);
+  font-size: 1.8rem;
+}
+
+.icon__ico:hover {
+  color: var(--soft-red);
+}
+
+/* Countdown section */
+
+.countdown {
+  display: flex;
+}
+
+.countdown__container {
+  background-color: var(--dark-desaturated-blue);
+  background-image: linear-gradient(
+    0deg,
+    var(--dark-desaturated-blue) 50%,
+    var(--dark-desaturated-blue-low) 50%
+  );
+  border-radius: 5px;
+  box-shadow: 5px 10px var(--very-dark-mostly-dark-blue);
+  height: 100px;
+  margin-right: 1.5rem;
+  position: relative;
+  width: 100px;
+}
+
+.countdown__container--line {
+  border-top: 1px solid var(--very-dark-blue);
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+.countdown__container--number {
+  -webkit-transform: translate(-50%, -50%);
+  color: var(--soft-red);
+  font-size: 3rem;
+  font-weight: 700;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Utilities */
+
+.d-none {
+  display: none;
+}
